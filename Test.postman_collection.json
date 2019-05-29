@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "3a800cfd-7792-4b47-8484-c195792cc5f2",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://subbieapp.com/RabbitController​/UsersList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a10fa8d0-e7b4-40ad-b13b-47c6f4fb2510",
+						"exec": [
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"const response=pm.response.json();",
+							"",
+							"pm.test(\"Borad name should be My borad\", function () {",
+							"   ",
+							"    pm.expect(response.borad).to.eql(\"My board\");",
+							"});",
+							"",
+							"",
+							"",
+							"pm.test(\"Your test name\", function () {",
+							"   ",
+							"    pm.expect(response.params.abc).to.eql(\"triue\");",
+							"});",
+							"",
+							"console.log(response);",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://subbieapp.com/RabbitController​/UsersList",
+					"protocol": "http",
+					"host": [
+						"subbieapp",
+						"com"
+					],
+					"path": [
+						"RabbitController​",
+						"UsersList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://subbieapp.com/RabbitController​/UsersList Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a10fa8d0-e7b4-40ad-b13b-47c6f4fb2510",
+						"exec": [
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"const response=pm.response.json();",
+							"",
+							"pm.test(\"Borad name should be My borad\", function () {",
+							"   ",
+							"    pm.expect(response.borad).to.eql(\"My board\");",
+							"});",
+							"",
+							"",
+							"",
+							"pm.test(\"Your test name\", function () {",
+							"   ",
+							"    pm.expect(response.params.abc).to.eql(\"triue\");",
+							"});",
+							"",
+							"console.log(response);",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://subbieapp.com/RabbitController​/UsersList",
+					"protocol": "http",
+					"host": [
+						"subbieapp",
+						"com"
+					],
+					"path": [
+						"RabbitController​",
+						"UsersList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "google api get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.google.com",
+					"protocol": "http",
+					"host": [
+						"www",
+						"google",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "google api get Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.google.com",
+					"protocol": "http",
+					"host": [
+						"www",
+						"google",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://www.google.com",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://www.google.com",
+					"protocol": "http",
+					"host": [
+						"www",
+						"google",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://virtserver.swaggerhub.com/telkomdds/TDS-Barricade-Partner_Mockup/1.0.0/api/v1/project/create?partnerId=1123a&partnerName=vgvgfgfd&idLOP=fdsgdgfd&projectName=1234&nipnasCustomer=gfdgfdg&customerName=fdgfdgd&segment=fgfdg&AMTelkomNik=fgfdfd&AMTelkomName=gfdgfdg&status=gdgfdf",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "HARpoo123143",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "HARPOO",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/telkomdds/TDS-Barricade-Partner_Mockup/1.0.0/api/v1/project/create?partnerId=1123a&partnerName=vgvgfgfd&idLOP=fdsgdgfd&projectName=1234&nipnasCustomer=gfdgfdg&customerName=fdgfdgd&segment=fgfdg&AMTelkomNik=fgfdfd&AMTelkomName=gfdgfdg&status=gdgfdf",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"telkomdds",
+						"TDS-Barricade-Partner_Mockup",
+						"1.0.0",
+						"api",
+						"v1",
+						"project",
+						"create"
+					],
+					"query": [
+						{
+							"key": "partnerId",
+							"value": "1123a"
+						},
+						{
+							"key": "partnerName",
+							"value": "vgvgfgfd"
+						},
+						{
+							"key": "idLOP",
+							"value": "fdsgdgfd"
+						},
+						{
+							"key": "projectName",
+							"value": "1234"
+						},
+						{
+							"key": "nipnasCustomer",
+							"value": "gfdgfdg"
+						},
+						{
+							"key": "customerName",
+							"value": "fdgfdgd"
+						},
+						{
+							"key": "segment",
+							"value": "fgfdg"
+						},
+						{
+							"key": "AMTelkomNik",
+							"value": "fgfdfd"
+						},
+						{
+							"key": "AMTelkomName",
+							"value": "gfdgfdg"
+						},
+						{
+							"key": "status",
+							"value": "gdgfdf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://od-api-demo.oxforddictionaries.com:443/api/v1/entries/{{source_id}}/\n{{word_id}}/sentences?app_id=5037d509&app_key=4dc1aebaa63721f0f8e79a55e2514bc7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://od-api-demo.oxforddictionaries.com:443/{{word_id}}/sentences?app_id=5037d509&app_key=4dc1aebaa63721f0f8e79a55e2514bc7",
+					"protocol": "http",
+					"host": [
+						"od-api-demo",
+						"oxforddictionaries",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"{{word_id}}",
+						"sentences"
+					],
+					"query": [
+						{
+							"key": "app_id",
+							"value": "5037d509"
+						},
+						{
+							"key": "app_key",
+							"value": "4dc1aebaa63721f0f8e79a55e2514bc7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "example.com",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6263ff8a-c490-4f53-b1da-cf5552d5642e",
+						"exec": [
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "example.com",
+					"host": [
+						"example",
+						"com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
